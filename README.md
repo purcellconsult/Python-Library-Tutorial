@@ -20,25 +20,8 @@ sudo apt-get install python3-tk
 
 The following code snippet shows how to create a simple window using `Tkinter`:  
 
-```python
-import tkinter as tk									1
+![](https://raw.githubusercontent.com/purcellconsult/Python-Library-Tutorial/master/tkinter_code.png)
 
-class Window(tk.Frame):									2
-    def __init__(self, master=None):					3
-        tk.Frame.__init__(self, master)					4
-        self.grid()										5
-        self.create()									6
-
-    def create(self):									7				
-        self.quitButton = tk.Button(self, text='Close',	
-                                    command=self.quit)	8
-        self.quitButton.grid()							9
-
-app = Window()											10
-app.master.title('first tkinter program')				11
-app.mainloop()											12
-
-```
 Below is the output: 
 
 ![](https://raw.githubusercontent.com/purcellconsult/Python-Library-Tutorial/master/simple_windows_tkinter.png)
